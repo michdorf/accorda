@@ -1,0 +1,8 @@
+.chord-sheet .column {
+	display: inline-block;
+	margin-right: 0.5em;
+}
+
+.chord-sheet .chord {
+	color: blueviolet;
+}

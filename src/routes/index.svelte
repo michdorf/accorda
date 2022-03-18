@@ -19,10 +19,10 @@
 				<img src="svelte-welcome.png" alt="Welcome" />
 			</picture>
 		</div>
-
-		<ChordsViewer></ChordsViewer>
 	</h1>
 
+		<ChordsViewer></ChordsViewer>
+	
 	<h2>
 		try editing <strong>src/routes/index.svelte</strong>
 	</h2>
