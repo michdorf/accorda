@@ -4,6 +4,11 @@
 
 <script lang="ts">
 	import Canzoni from '../js/canzoni';
+
+	$: titoli = Canzoni.canzoni.map((canzone) => {
+		let match = canzone.plain.match(/{title: ?(.+?)}/);
+		return match.length >= 1 ? match[1] : "Ukendt titel";
+	});
 </script>
 
 <svelte:head>
@@ -15,8 +20,8 @@
 		Chordspro
 	</h1>
 
-	{#each Canzoni.canzoni as canzone, i}
-		<a href={'/canzone/' + i}>{canzone.plain.substr(0,40)}</a>
+	{#each titoli as titolo, i}
+		<a href={'/canzone/' + i}>{titolo}</a>
 	{/each}
 </section>
 
