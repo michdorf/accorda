@@ -25,6 +25,7 @@
     "@fontsource/fira-mono": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
     "chordsheetjs": "^6.1.0",
-    "cookie": "^0.4.1"
+    "cookie": "^0.4.1",
+    "moduli": "github:michdorf/moduli"
   }
 }
