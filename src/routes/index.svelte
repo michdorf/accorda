@@ -3,11 +3,11 @@
 </script>
 
 <script lang="ts">
-	import Canzoni from '../js/canzoni';
+	import { canzoniStore } from '../js/canzoni';
 
-	$: titoli = Canzoni.canzoni.map((canzone) => {
+	$: titoli = $canzoniStore.map((canzone) => {
 		let match = canzone.plain.match(/{title: ?(.+?)}/);
-		return match.length >= 1 ? match[1] : "Ukendt titel";
+		return match !== null ? match[1] : canzone.plain.split("\n")[0] || "Ukendt titel";
 	});
 </script>
 
@@ -23,6 +23,9 @@
 	{#each titoli as titolo, i}
 		<a href={'/canzone/' + i}>{titolo}</a>
 	{/each}
+	{#if titoli.length < 1}
+		<h2 style="font-weight: bold;">Ingen sange...</h2>
+	{/if}
 </section>
 
 <style>
