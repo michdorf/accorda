@@ -21,7 +21,7 @@ class Percorsatore {
 		percorsoStore.subscribe((percorso) => this.salva(percorso));
     }
 
-    naviga(uri: string, params?: Params) {
+    naviga(uri: nomiPercorsi, params?: Params) {
         percorsoStore.update((percorso) => {
             percorso.uri = uri; 
             window.location.hash = uri;
