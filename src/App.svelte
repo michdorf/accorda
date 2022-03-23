@@ -24,6 +24,8 @@
 	function selezionaCanzone(i: number) {
 		Percorsatore.naviga('canzone', {canzoneId: i});
 	}
+
+	
 	// export let name: string;
 </script>
 
