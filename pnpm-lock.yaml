@@ -7,6 +7,7 @@ specifiers:
   '@tsconfig/svelte': ^2.0.0
   '@types/chordsheetjs': ^2.8.0
   chordsheetjs: 2.4.0
+  moduli: github:michdorf/moduli
   rollup: ^2.3.4
   rollup-plugin-css-only: ^3.1.0
   rollup-plugin-livereload: ^2.0.0
@@ -22,6 +23,7 @@ specifiers:
 dependencies:
   '@types/chordsheetjs': 2.8.0
   chordsheetjs: 2.4.0
+  moduli: github.com/michdorf/moduli/7944a0d6e36f71347771459a6e1e24fbdec96006
   sirv-cli: 2.0.2
 
 devDependencies:
@@ -984,3 +986,9 @@ packages:
       utf-8-validate:
         optional: true
     dev: true
+
+  github.com/michdorf/moduli/7944a0d6e36f71347771459a6e1e24fbdec96006:
+    resolution: {commit: 7944a0d6e36f71347771459a6e1e24fbdec96006, repo: git+ssh://git@github.com/michdorf/moduli.git, type: git}
+    name: moduli
+    version: 1.0.0
+    dev: false

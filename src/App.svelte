@@ -5,6 +5,8 @@
 	import Aggiungi from "./comps/aggiungi.svelte";
 	import ChordsViewer from "./comps/ChordsViewer.svelte";
 
+	import Db from './js/db';
+
 	$: titoli = $canzoniStore.map((canzone) => {
 		let match = canzone.plain.match(/{title: ?(.+?)}/);
 		return match !== null ? match[1] : canzone.plain.split("\n")[0] || "Ukendt titel";

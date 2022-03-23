@@ -27,6 +27,7 @@
   "dependencies": {
     "@types/chordsheetjs": "^2.8.0",
     "chordsheetjs": "2.4.0",
+    "moduli": "github:michdorf/moduli",
     "sirv-cli": "^2.0.0"
   }
 }
