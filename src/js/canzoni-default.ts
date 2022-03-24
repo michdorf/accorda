@@ -30,7 +30,20 @@ function essisteCanzone(testo: string) {
 }
 
 export default async function caricaCanzoniDefault() {
-    const nomiFile = ['Dance Monkey', 'Elefantens Vuggevise'];
+    const nomiFile = ['Dance Monkey', 
+                      'Elefantens Vuggevise', 
+                      'Hallelujah Italiano', 
+                      'Julies Sprog - Melodi Benny Holst - Tekst Benny Holst',
+                      'Kald det Kærlighed',
+                      'Livstræet - Hans HolmErik Lindebjerg',
+                      'Magi i luften',
+                      'Ninna Nanna degli Animaletti',
+                      'Papirsklip',
+                      'Regnvejrsdag i November',
+                      'Rolling in the Deep',
+                      'Sig du kan li mig',
+                      'Tusind stykker'
+                     ];
 
     for (let i = 0; i < nomiFile.length; i++) {
         await caricaCanzone(nomiFile[i]);
