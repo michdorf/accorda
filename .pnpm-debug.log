@@ -7,15 +7,15 @@
     "errno": "ENOENT",
     "syscall": "spawn",
     "file": "sh",
-    "pkgid": "svelte-app@1.0.0",
+    "pkgid": "chordsviewer@0.0.1",
     "stage": "dev",
-    "script": "rollup -c -w",
-    "pkgname": "svelte-app",
+    "script": "svelte-kit dev \"--open\"",
+    "pkgname": "chordsviewer",
     "err": {
       "name": "pnpm",
-      "message": "svelte-app@1.0.0 dev: `rollup -c -w`\nspawn ENOENT",
+      "message": "chordsviewer@0.0.1 dev: `svelte-kit dev \"--open\"`\nspawn ENOENT",
       "code": "ELIFECYCLE",
-      "stack": "pnpm: svelte-app@1.0.0 dev: `rollup -c -w`\nspawn ENOENT\n    at ChildProcess.<anonymous> (/Users/michele/.npm/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.3/node_modules/pnpm/dist/pnpm.cjs:92278:22)\n    at ChildProcess.emit (events.js:400:28)\n    at maybeClose (internal/child_process.js:1055:16)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)"
+      "stack": "pnpm: chordsviewer@0.0.1 dev: `svelte-kit dev \"--open\"`\nspawn ENOENT\n    at ChildProcess.<anonymous> (/Users/michele/.npm/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.3/node_modules/pnpm/dist/pnpm.cjs:92278:22)\n    at ChildProcess.emit (events.js:400:28)\n    at maybeClose (internal/child_process.js:1055:16)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)"
     }
   },
   "2 warn pnpm:global": " Local package.json exists, but node_modules missing, did you mean to install?"

@@ -1,4 +1,4 @@
-import { writable, get } from "svelte/store";
+import { writable } from "svelte/store";
 
 type nomiPercorsi = 'home' | 'canzoni' | 'canzone' | 'aggiungi';
 interface Percorso {
