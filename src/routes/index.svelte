@@ -4,6 +4,7 @@
 
 <script lang="ts">
 	import { canzoniStore } from '../js/canzoni';
+	import BASEPATH from "../js/basepath";
 
 	$: titoli = $canzoniStore.map((canzone) => {
 		let match = canzone.plain.match(/{title: ?(.+?)}/);
@@ -21,7 +22,7 @@
 	</h1>
 
 	{#each titoli as titolo, i}
-		<a href={'/canzone/' + i}>{titolo}</a>
+		<a href={BASEPATH + 'canzone/' + i}>{titolo}</a>
 	{/each}
 	{#if titoli.length < 1}
 		<h2 style="font-weight: bold;">Ingen sange...</h2>

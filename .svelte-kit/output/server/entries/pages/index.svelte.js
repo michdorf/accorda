@@ -1,5 +1,6 @@
-import { c as create_ssr_component, a as subscribe, d as each, b as add_attribute, e as escape } from "../../chunks/index-c46f8c98.js";
-import { c as canzoniStore } from "../../chunks/canzoni-e1a635bd.js";
+import { c as create_ssr_component, a as subscribe, h as each, b as add_attribute, e as escape } from "../../chunks/index-19e9ff0b.js";
+import { c as canzoniStore } from "../../chunks/canzoni-7e3dbe35.js";
+import { B as BASEPATH } from "../../chunks/basepath-3dfff301.js";
 var index_svelte_svelte_type_style_lang = "";
 const css = {
   code: "section.svelte-1bgohwt{display:flex;flex-direction:column;justify-content:center;align-items:center;flex:1}h1.svelte-1bgohwt{width:100%}",
@@ -22,7 +23,7 @@ const Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 	</h1>
 
 	${each(titoli, (titolo, i) => {
-    return `<a${add_attribute("href", "/canzone/" + i, 0)}>${escape(titolo)}</a>`;
+    return `<a${add_attribute("href", BASEPATH + "canzone/" + i, 0)}>${escape(titolo)}</a>`;
   })}
 	${titoli.length < 1 ? `<h2 style="${"font-weight: bold;"}">Ingen sange...</h2>` : ``}
 </section>`;

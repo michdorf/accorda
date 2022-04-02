@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import BASEPATH from '../../js/basepath';
 	import logo from './ikon.png';
 	import caricaCanzoniDefault from '../../js/canzoni-default';
 
@@ -19,10 +20,10 @@
 		</svg>
 		<ul>
 			<li class:active={$page.url.pathname === '/'}>
-				<a sveltekit:prefetch href="/">Canzoni</a>
+				<a sveltekit:prefetch href="{BASEPATH}">Canzoni</a>
 			</li>
 			<li class:active={$page.url.pathname === '/aggiungi'}>
-				<a sveltekit:prefetch href="/aggiungi">Aggiungi</a>
+				<a sveltekit:prefetch href="{BASEPATH}aggiungi">Aggiungi</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">

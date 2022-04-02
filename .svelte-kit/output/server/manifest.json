@@ -4,27 +4,24 @@
     "src": ".svelte-kit/build/index.js",
     "isEntry": true,
     "imports": [
-      "_index-c46f8c98.js"
+      "_index-19e9ff0b.js"
     ],
     "dynamicImports": [
       "src/hooks.ts"
     ]
-  },
-  "src/routes/todos/index.ts": {
-    "file": "entries/endpoints/todos/index.ts.js",
-    "src": "src/routes/todos/index.ts",
-    "isEntry": true
   },
   "src/routes/__layout.svelte": {
     "file": "entries/pages/__layout.svelte.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index-c46f8c98.js",
-      "_stores-a971dd72.js"
+      "_index-19e9ff0b.js",
+      "_stores-f4051a70.js",
+      "_basepath-3dfff301.js",
+      "_canzoni-7e3dbe35.js"
     ],
     "css": [
-      "assets/entries/pages/__layout.svelte-2b4c9aa9.css"
+      "assets/entries/pages/__layout.svelte-d51f9d28.css"
     ],
     "assets": [
       "assets/ikon-9bdf35c1.png",
@@ -42,7 +39,7 @@
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
-      "_index-c46f8c98.js"
+      "_index-19e9ff0b.js"
     ]
   },
   "src/routes/index.svelte": {
@@ -50,8 +47,9 @@
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "imports": [
-      "_index-c46f8c98.js",
-      "_canzoni-e1a635bd.js"
+      "_index-19e9ff0b.js",
+      "_canzoni-7e3dbe35.js",
+      "_basepath-3dfff301.js"
     ],
     "css": [
       "assets/entries/pages/index.svelte-1cebc8f7.css"
@@ -62,8 +60,8 @@
     "src": "src/routes/aggiungi.svelte",
     "isEntry": true,
     "imports": [
-      "_index-c46f8c98.js",
-      "_canzoni-e1a635bd.js"
+      "_index-19e9ff0b.js",
+      "_canzoni-7e3dbe35.js"
     ],
     "css": [
       "assets/entries/pages/aggiungi.svelte-0e45616e.css"
@@ -74,35 +72,27 @@
     "src": "src/routes/canzone/[canzoneId].svelte",
     "isEntry": true,
     "imports": [
-      "_index-c46f8c98.js",
-      "_stores-a971dd72.js",
-      "_canzoni-e1a635bd.js"
+      "_index-19e9ff0b.js",
+      "_stores-f4051a70.js",
+      "_canzoni-7e3dbe35.js"
     ]
   },
-  "src/routes/todos/index.svelte": {
-    "file": "entries/pages/todos/index.svelte.js",
-    "src": "src/routes/todos/index.svelte",
-    "isEntry": true,
+  "_index-19e9ff0b.js": {
+    "file": "chunks/index-19e9ff0b.js"
+  },
+  "_stores-f4051a70.js": {
+    "file": "chunks/stores-f4051a70.js",
     "imports": [
-      "_index-c46f8c98.js"
-    ],
-    "css": [
-      "assets/entries/pages/todos/index.svelte-02327cf1.css"
+      "_index-19e9ff0b.js"
     ]
   },
-  "_index-c46f8c98.js": {
-    "file": "chunks/index-c46f8c98.js"
+  "_basepath-3dfff301.js": {
+    "file": "chunks/basepath-3dfff301.js"
   },
-  "_stores-a971dd72.js": {
-    "file": "chunks/stores-a971dd72.js",
+  "_canzoni-7e3dbe35.js": {
+    "file": "chunks/canzoni-7e3dbe35.js",
     "imports": [
-      "_index-c46f8c98.js"
-    ]
-  },
-  "_canzoni-e1a635bd.js": {
-    "file": "chunks/canzoni-e1a635bd.js",
-    "imports": [
-      "_index-c46f8c98.js"
+      "_index-19e9ff0b.js"
     ]
   },
   "src/hooks.ts": {

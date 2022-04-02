@@ -1,10 +1,11 @@
 import Canzoni, { canzoniStore } from "./canzoni";
+import BASEPATH from "./basepath";
 /**
  * Carica una canzone dalla cartella di canzoni default
  * @param fn Without extension
  */
 function caricaCanzone(fn: string) {
-    return fetch(new Request(`/canzoni/${fn}.pro`)).then((response) => {
+    return fetch(new Request(`${BASEPATH}canzoni/${fn}.pro`)).then((response) => {
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${ response.status }`);
         }

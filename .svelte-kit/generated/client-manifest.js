@@ -5,13 +5,11 @@ export const components = [
 	() => import("../runtime/components/error.svelte"),
 	() => import("../../src/routes/index.svelte"),
 	() => import("../../src/routes/aggiungi.svelte"),
-	() => import("../../src/routes/canzone/[canzoneId].svelte"),
-	() => import("../../src/routes/todos/index.svelte")
+	() => import("../../src/routes/canzone/[canzoneId].svelte")
 ];
 
 export const dictionary = {
 	"": [[0, 2], [1]],
 	"aggiungi": [[0, 3], [1]],
-	"canzone/[canzoneId]": [[0, 4], [1]],
-	"todos": [[0, 5], [1], 1]
+	"canzone/[canzoneId]": [[0, 4], [1]]
 };

@@ -17,7 +17,7 @@ var __privateSet = (obj, member, value, setter) => {
   return value;
 };
 var _use_hashes, _dev, _script_needs_csp, _style_needs_csp, _directives, _script_src, _style_src;
-import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component } from "./chunks/index-c46f8c98.js";
+import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component } from "./chunks/index-19e9ff0b.js";
 import "cookie";
 import "@lukeed/uuid";
 function afterUpdate() {
@@ -1713,7 +1713,7 @@ async function respond(request, options, state) {
     return new Response(void 0, {
       status: 301,
       headers: {
-        location: normalized + (url.search === "?" ? "" : url.search)
+        location: (normalized.startsWith("//") ? url.origin + normalized : normalized) + (url.search === "?" ? "" : url.search)
       }
     });
   }
@@ -1974,7 +1974,7 @@ class Server {
       manifest,
       method_override: { "parameter": "_method", "allowed": ["PATCH", "DELETE"] },
       paths: { base, assets },
-      prefix: assets + "/_app/",
+      prefix: assets + "/internal/",
       prerender: true,
       read,
       root: Root,

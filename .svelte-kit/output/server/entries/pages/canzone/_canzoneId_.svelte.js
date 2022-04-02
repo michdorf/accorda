@@ -1,6 +1,6 @@
-import { c as create_ssr_component, a as subscribe, v as validate_component } from "../../../chunks/index-c46f8c98.js";
-import { p as page } from "../../../chunks/stores-a971dd72.js";
-import { C as Canzoni } from "../../../chunks/canzoni-e1a635bd.js";
+import { c as create_ssr_component, a as subscribe, v as validate_component } from "../../../chunks/index-19e9ff0b.js";
+import { p as page } from "../../../chunks/stores-f4051a70.js";
+import { C as Canzoni } from "../../../chunks/canzoni-7e3dbe35.js";
 import ChordSheetJS from "chordsheetjs";
 const ChordsViewer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { canzone } = $$props;
