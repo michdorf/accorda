@@ -1,3 +1,4 @@
+import { browser } from "$app/env";
 import {writable, get} from 'svelte/store'
 
 const storageKey = "chords-canzoni"
@@ -30,6 +31,9 @@ class Canzoni {
 	}
 
 	carica() {
+		if (!browser) {
+			return; // localStorage not awailable on server
+		}
 		const db = localStorage.getItem(storageKey);
 		const canzoni = JSON.parse(db || "[]").map((item) => {
 			item.creato = new Date(item.creato * 1000);
@@ -40,6 +44,10 @@ class Canzoni {
 	}
 
 	salva(canzoni: CanzoneInterfaccia[]) {
+		if (!browser) {
+			return; // localStorage not awailable on server
+		}
+		
 		const data = canzoni.map((item) => {
 			if (typeof item.creato !== "number") {
 				// @ts-ignore convert date to number when saving

@@ -1,0 +1,119 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "start-f3fa2666.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-5db440d4.js",
+      "_index-2e263ff2.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/index.svelte",
+      "src/routes/aggiungi.svelte",
+      "src/routes/canzone/[canzoneId].svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-4c9bf159.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5db440d4.js",
+      "_stores-acaf7ccb.js",
+      "_basepath-0343e76f.js",
+      "_canzoni-b5958ce5.js",
+      "_index-2e263ff2.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-c0fe8bce.css"
+    ],
+    "assets": [
+      "assets/ikon-9bdf35c1.png",
+      "assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
+      "assets/fira-mono-all-400-normal-1e3b098c.woff",
+      "assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2",
+      "assets/fira-mono-greek-ext-400-normal-9e2fe623.woff2",
+      "assets/fira-mono-greek-400-normal-a8be01ce.woff2",
+      "assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2",
+      "assets/fira-mono-latin-400-normal-e43b3538.woff2"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "error.svelte-01c7deb7.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5db440d4.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-8e1fc510.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5db440d4.js",
+      "_canzoni-b5958ce5.js",
+      "_basepath-0343e76f.js",
+      "_index-2e263ff2.js"
+    ],
+    "css": [
+      "assets/pages/index.svelte-7d95003e.css"
+    ]
+  },
+  "src/routes/aggiungi.svelte": {
+    "file": "pages/aggiungi.svelte-1c821bbe.js",
+    "src": "src/routes/aggiungi.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5db440d4.js",
+      "_canzoni-b5958ce5.js",
+      "_index-2e263ff2.js"
+    ],
+    "css": [
+      "assets/pages/aggiungi.svelte-d906260f.css"
+    ]
+  },
+  "src/routes/canzone/[canzoneId].svelte": {
+    "file": "pages/canzone/_canzoneId_.svelte-8915e65a.js",
+    "src": "src/routes/canzone/[canzoneId].svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5db440d4.js",
+      "_stores-acaf7ccb.js",
+      "_canzoni-b5958ce5.js",
+      "_index-2e263ff2.js"
+    ]
+  },
+  "_index-5db440d4.js": {
+    "file": "chunks/index-5db440d4.js"
+  },
+  "_index-2e263ff2.js": {
+    "file": "chunks/index-2e263ff2.js",
+    "imports": [
+      "_index-5db440d4.js"
+    ]
+  },
+  "_stores-acaf7ccb.js": {
+    "file": "chunks/stores-acaf7ccb.js",
+    "imports": [
+      "_index-5db440d4.js"
+    ]
+  },
+  "_basepath-0343e76f.js": {
+    "file": "chunks/basepath-0343e76f.js"
+  },
+  "_canzoni-b5958ce5.js": {
+    "file": "chunks/canzoni-b5958ce5.js",
+    "imports": [
+      "_index-2e263ff2.js",
+      "_index-5db440d4.js"
+    ]
+  }
+}

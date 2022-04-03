@@ -1,0 +1,103 @@
+{
+  ".svelte-kit/build/index.js": {
+    "file": "index.js",
+    "src": ".svelte-kit/build/index.js",
+    "isEntry": true,
+    "imports": [
+      "_index-19e9ff0b.js"
+    ],
+    "dynamicImports": [
+      "src/hooks.ts"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "entries/pages/__layout.svelte.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-19e9ff0b.js",
+      "_stores-f4051a70.js",
+      "_basepath-3dfff301.js",
+      "_canzoni-7e3dbe35.js"
+    ],
+    "css": [
+      "assets/entries/pages/__layout.svelte-d51f9d28.css"
+    ],
+    "assets": [
+      "assets/ikon-9bdf35c1.png",
+      "assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
+      "assets/fira-mono-all-400-normal-1e3b098c.woff",
+      "assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2",
+      "assets/fira-mono-greek-ext-400-normal-9e2fe623.woff2",
+      "assets/fira-mono-greek-400-normal-a8be01ce.woff2",
+      "assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2",
+      "assets/fira-mono-latin-400-normal-e43b3538.woff2"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-19e9ff0b.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "entries/pages/index.svelte.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-19e9ff0b.js",
+      "_canzoni-7e3dbe35.js",
+      "_basepath-3dfff301.js"
+    ],
+    "css": [
+      "assets/entries/pages/index.svelte-1cebc8f7.css"
+    ]
+  },
+  "src/routes/aggiungi.svelte": {
+    "file": "entries/pages/aggiungi.svelte.js",
+    "src": "src/routes/aggiungi.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-19e9ff0b.js",
+      "_canzoni-7e3dbe35.js"
+    ],
+    "css": [
+      "assets/entries/pages/aggiungi.svelte-0e45616e.css"
+    ]
+  },
+  "src/routes/canzone/[canzoneId].svelte": {
+    "file": "entries/pages/canzone/_canzoneId_.svelte.js",
+    "src": "src/routes/canzone/[canzoneId].svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-19e9ff0b.js",
+      "_stores-f4051a70.js",
+      "_canzoni-7e3dbe35.js"
+    ]
+  },
+  "_index-19e9ff0b.js": {
+    "file": "chunks/index-19e9ff0b.js"
+  },
+  "_stores-f4051a70.js": {
+    "file": "chunks/stores-f4051a70.js",
+    "imports": [
+      "_index-19e9ff0b.js"
+    ]
+  },
+  "_basepath-3dfff301.js": {
+    "file": "chunks/basepath-3dfff301.js"
+  },
+  "_canzoni-7e3dbe35.js": {
+    "file": "chunks/canzoni-7e3dbe35.js",
+    "imports": [
+      "_index-19e9ff0b.js"
+    ]
+  },
+  "src/hooks.ts": {
+    "file": "chunks/hooks-87fb94fd.js",
+    "src": "src/hooks.ts",
+    "isDynamicEntry": true
+  }
+}
