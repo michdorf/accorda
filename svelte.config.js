@@ -1,8 +1,6 @@
-import autoAdapter from '@sveltejs/adapter-auto';
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
-const is_vercel = typeof process.env.IS_VERCEL !== "undefined" ? process.env.IS_VERCEL : false;
 const dev = process.env.NODE_ENV === 'development';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -12,12 +10,12 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: is_vercel ? autoAdapter() : adapter({
+		adapter: adapter({
 			fallback: '200.html'
 		}),
 
 		paths: {
-			base: (dev && !is_vercel) ? '' : '/chords',
+			base: dev ? '' : '/chords',
 		}, 
 
 		prerender: {
