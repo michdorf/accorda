@@ -12,7 +12,7 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: is_vercel ? auto_adapter() : adapter({
+		adapter: is_vercel ? autoAdapter() : adapter({
 			fallback: '200.html'
 		}),
 
