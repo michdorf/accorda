@@ -24,6 +24,7 @@
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
+    "@supabase/supabase-js": "^1.33.3",
     "@sveltejs/adapter-static": "^1.0.0-next.29",
     "chordsheetjs": "^6.1.0",
     "cookie": "^0.4.1"
