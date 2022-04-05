@@ -4,7 +4,9 @@
 	import logo from './ikon.png';
 	import caricaCanzoniDefault from '../../js/canzoni-default';
 
-	caricaCanzoniDefault();
+	if (false) {
+		caricaCanzoniDefault();
+	}
 </script>
 
 <header>

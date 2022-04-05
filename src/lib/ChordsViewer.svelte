@@ -14,7 +14,7 @@ const chordSheetPro = `Let it [Am ]be, let it [C/G ]be, let it [F ]be, let it [C
 [C ]Whisper words of [G ]wisdom, let it [F ]be[C/E][Dm][C]`
  */
 
-const chordSheet = canzone.plain;
+const chordSheet = canzone.contenuto;
 
 let parser;
 if (canzone.formato == 'chords-pro') {

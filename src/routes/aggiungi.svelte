@@ -4,7 +4,7 @@ import type { CanzoneInterfaccia } from "../js/canzoni";
 
 	let canzone: CanzoneInterfaccia = {
 		formato: 'chords-pro',
-		plain: '',
+		contenuto: '',
 		creato: new Date()
 	};
 
@@ -20,7 +20,7 @@ import type { CanzoneInterfaccia } from "../js/canzoni";
 </svelte:head>
 
 <div class="content">
-	<textarea bind:value={canzone.plain}></textarea>
+	<textarea bind:value={canzone.contenuto}></textarea>
 	<button on:click={salva}>Salva</button>
 </div>
 

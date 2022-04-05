@@ -3,12 +3,12 @@
 </script>
 
 <script lang="ts">
-	import { canzoniStore } from '../js/canzoni';
+	import { canzoniStore, type CanzoneInterfaccia } from '../js/canzoni';
 	import BASEPATH from "../js/basepath";
 
-	$: titoli = $canzoniStore.map((canzone) => {
-		let match = canzone.plain.match(/{title: ?(.+?)}/);
-		return match !== null ? match[1] : canzone.plain.split("\n")[0] || "Ukendt titel";
+	$: titoli = $canzoniStore.map((canzone: CanzoneInterfaccia) => {
+		let match = canzone.contenuto.match(/{title: ?(.+?)}/);
+		return match !== null ? match[1] : canzone.contenuto.split("\n")[0] || "Ukendt titel";
 	});
 </script>
 
