@@ -14,7 +14,7 @@ function caricaCanzone(fn: string) {
             if (!essisteCanzone(testo)) {
                 Canzoni.agg({
                     formato: 'chords-pro',
-                    plain: testo,
+                    contenuto: testo,
                     creato: new Date()
                 });
             } else {
@@ -27,7 +27,7 @@ function caricaCanzone(fn: string) {
 let tuttiCanzoni = [];
 canzoniStore.subscribe((canzoni) => {tuttiCanzoni = canzoni});
 function essisteCanzone(testo: string) {
-    return tuttiCanzoni.map((canzone) => canzone.plain).filter((testoCanzone) => testoCanzone.substring(0,25) == testo.substring(0,25)).length > 0;
+    return tuttiCanzoni.map((canzone) => canzone.contenuto).filter((testoCanzone) => testoCanzone.substring(0,25) == testo.substring(0,25)).length > 0;
 }
 
 export default async function caricaCanzoniDefault() {
