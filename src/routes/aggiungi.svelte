@@ -26,8 +26,14 @@ import type { CanzoneInterfaccia } from "../js/canzoni";
 
 <style>
 	.content {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	textarea {
+		flex: 1;
 		width: 100%;
-		max-width: var(--column-width);
-		margin: var(--column-margin-top) auto 0 auto;
+		height: 100%;
+		box-sizing: border-box;
 	}
 </style>

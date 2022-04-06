@@ -11,6 +11,7 @@
 	--accent-color: #036eff;
 	--heading-color: rgba(0, 0, 0, 0.7);
 	--text-color: #444444;
+	--background-app: #e6e6e6;
 	--background-without-opacity: rgba(255, 255, 255, 0.7);
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
@@ -19,13 +20,13 @@
 body {
 	min-height: 100vh;
 	margin: 0;
-	background-color: var(--primary-color);
-	background: linear-gradient(
+	background-color: var(--background-app);
+	/* background: linear-gradient(
 		180deg,
 		var(--primary-color) 0%,
 		var(--secondary-color) 10.45%,
 		var(--tertiary-color) 41.35%
-	);
+	); */
 }
 
 body::before {

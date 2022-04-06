@@ -4,43 +4,30 @@
 	import '../css/chordsheet.css';
 </script>
 
-<Header />
+<div class="layout">
+	<Header />
 
-<main>
-	<slot />
-</main>
+	<main>
+		<slot />
+	</main>
 
-<footer>
-	
-</footer>
+	<footer>
+		
+	</footer>
+</div>
 
 <style>
-	main {
-		flex: 1;
+	div.layout {
+		height: 100vh;
 		display: flex;
 		flex-direction: column;
+		box-sizing: border-box;
+	}
+	main {
+		flex: 1;
 		padding: 1rem;
 		width: 100%;
 		max-width: 1024px;
 		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 40px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
 	}
 </style>
