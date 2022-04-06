@@ -19,6 +19,8 @@ const chordSheet = canzone.contenuto;
 let parser;
 if (canzone.formato == 'chords-pro') {
 	parser = new ChordSheetJS.ChordProParser();
+} else {
+	parser = new ChordSheetJS.UltimateGuitarParser();
 }
 let song = parser.parse(chordSheet);
 

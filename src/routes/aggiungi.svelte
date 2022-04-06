@@ -21,7 +21,13 @@ import type { CanzoneInterfaccia } from "../js/canzoni";
 
 <div class="content">
 	<textarea bind:value={canzone.contenuto}></textarea>
-	<button on:click={salva}>Salva</button>
+	<div class="btn pannello">
+		<button on:click={salva}>Salva</button>
+		<select bind:value={canzone.formato}>
+			<option value="chords-pro">ChordsPro</option>
+			<option value="ultimate-guitar">Ultimate Guitar</option>
+		</select>
+	</div>
 </div>
 
 <style>
