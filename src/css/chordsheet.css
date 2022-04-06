@@ -1,3 +1,9 @@
 .chord-sheet .chord {
 	color: var(--accent-color);
 }
+
+.chord-sheet .paragraph.chorus {
+	border-left: 1px solid gray;
+	padding-left: 2px;
+	background-color: #dee8f7;
+}
