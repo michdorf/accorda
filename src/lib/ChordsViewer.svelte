@@ -1,6 +1,10 @@
+<script context="module">
+	let chordsStyleApplied = false;
+</script>
 <script lang="ts">
 /* https://github.com/martijnversluis/ChordSheetJS#how-to- */
 import ChordSheetJS from 'chordsheetjs';
+import applyStyling from '../js/chordsviewer';
 import type {CanzoneInterfaccia} from '../js/canzoni';
 
 export let canzone: CanzoneInterfaccia;
@@ -26,6 +30,10 @@ let song = parser.parse(chordSheet);
 
 const formatter = new ChordSheetJS.HtmlDivFormatter();
 const disp = formatter.format(song);
+if (!chordsStyleApplied) {
+	applyStyling();
+	chordsStyleApplied = true;
+}
 </script>
 
 <div>
